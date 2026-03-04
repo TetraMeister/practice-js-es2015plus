@@ -7,7 +7,7 @@ document.querySelector('.cart__btn-calculate').addEventListener('click', () => {
     const { value } = el;
     const { dataset: { price } } = el;
 
-    if (value && value >= 0) {
+    if (value && value > 0) {
       sum += value * price;
     } else {
       alert('Wpisz poprawne ilości!')
